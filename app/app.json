@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Elo",
+    "slug": "elo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "elo",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#4F8F8A",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permita que o ELO acesse suas fotos para anexar documentos e atualizar seu perfil.",
+          "cameraPermission": "Permita que o ELO use a câmera para tirar uma foto ou digitalizar um documento."
+        }
+      ],
+      [
+        "expo-document-picker",
+        {}
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/elo-logo-branca.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#4F8F8A",
+          "dark": {
+            "backgroundColor": "#4F8F8A"
+          }
+        }
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser",
+      "expo-sharing",
+      "expo-asset",
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
